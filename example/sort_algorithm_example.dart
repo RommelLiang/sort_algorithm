@@ -13,19 +13,20 @@ typedef SortFunction = List<int> Function(List<int> list);
 
 void main() {
   var rng = Random();
-  var originalList = List<int>(999999);
+  var originalList = List<int>(99999);
   for (var i = 0; i < originalList.length; i++) {
     originalList[i] = rng.nextInt(999999);
   }
 
 
-  Isolate.spawn(execution, MethodMessage('冒泡排序', bubbleSort, originalList));
-  Isolate.spawn(execution, MethodMessage('选择排序', selectionSort, originalList));
-  Isolate.spawn(execution, MethodMessage('插入排序', insertionSort, originalList));
-  Isolate.spawn(execution, MethodMessage('希尔排序', shellSort, originalList));
-  Isolate.spawn(execution, MethodMessage('归并排序', mergeSort, originalList));
-  Isolate.spawn(execution, MethodMessage('分组排序', groupSort, originalList));
-  Isolate.spawn(execution, MethodMessage('快速排序', quickSort, originalList));
+  Isolate.spawn(execution, MethodMessage('冒泡排序', bubbleSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('选择排序', selectionSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('插入排序', insertionSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('希尔排序', shellSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('归并排序', mergeSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('分组排序', groupSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('快速排序', quickSort, List.of(originalList)));
+  Isolate.spawn(execution, MethodMessage('堆排序', heapSort, List.of(originalList)));
   while (true) {}
 }
 
