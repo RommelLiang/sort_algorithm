@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9a15d96-e10a-496c-9482-c676ad629577" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/structure/用Dart实现几个基础的排序算法.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/structure/详解二叉堆和堆排序.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/structure/binary_heap.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/structure/binary_heap.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/用Dart实现几个基础的排序算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/structure/用Dart实现几个基础的排序算法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/structure/详解二叉堆和堆排序.md" beforeDir="false" afterPath="$PROJECT_DIR$/structure/详解二叉堆和堆排序.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
