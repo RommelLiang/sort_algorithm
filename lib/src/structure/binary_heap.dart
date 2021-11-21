@@ -18,17 +18,6 @@ class BinaryHeap {
     percolateUp(num);
   }
 
-  ///插入操作
-  void deleteRoot() {
-    ///将最后一个节点的元素放入第一个节点，并删除最后一个节点
-    heapList[0] = heapList[heapList.length - 1];
-    heapList.removeAt(heapList.length - 1);
-
-    ///开始下滤
-    percolateDown();
-    systemOutList('删除根节点');
-  }
-
   ///上滤
   void percolateUp(int num) {
     ///首先找到最后一位新加入的元素
@@ -44,6 +33,17 @@ class BinaryHeap {
 
   void systemOutList(String val) {
     print('$val:$heapList');
+  }
+
+  ///删除操作
+  void deleteRoot() {
+    ///将最后一个节点的元素放入第一个节点，并删除最后一个节点
+    heapList[0] = heapList[heapList.length - 1];
+    heapList.removeAt(heapList.length - 1);
+
+    ///开始下滤
+    percolateDown();
+    systemOutList('删除根节点');
   }
 
   ///下滤
